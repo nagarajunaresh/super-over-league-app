@@ -1,11 +1,23 @@
 /* Write your code here. */
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
 .heading {
   font-family: Roboto;
-  font-size: 50px;
+  font-size: 36px;
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 50px;
+  }
+}
 .container {
   background-color: #0f172a;
   background-size: cover;
@@ -16,7 +28,14 @@
   align-items: center;
 }
 
-img {
-  height: 300px;
-  width: 300px;
+.logo-img {
+  height: 150px;
+  width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-img {
+    height: 300px;
+    width: 300px;
+  }
 }
